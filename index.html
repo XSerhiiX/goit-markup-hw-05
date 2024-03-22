@@ -586,7 +586,7 @@
         </button>
         <p class="modal-comm">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="info_form" autocomplete="off">
-          <div class="modal-form-name">
+          <div class="modal-form-area">
             <label class="modal-form-lable" for="user_name">Name</label>
             <div class="modal-form-box">
               <input
@@ -600,7 +600,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-name">
+          <div class="modal-form-area">
             <label class="modal-form-lable" for="user_phone">Phone</label>
             <div class="modal-form-box">
               <input
@@ -614,7 +614,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-name">
+          <div class="modal-form-area">
             <label class="modal-form-lable" for="user_email">Email</label>
             <div class="modal-form-box">
               <input
@@ -628,7 +628,32 @@
               </svg>
             </div>
           </div>
-          <textaria name="" rows="4"></textaria>
+          <div class="modal-form-area">
+            <label for="user_message">Comment</label>
+            <textarea
+              name="user_message"
+              id="user_message"
+              rows="4"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+
+          <label class="modal-form-condition condition">
+            <input type="checkbox" />
+            <span class="condition-checkbox"
+              ><svg class="condition-checkbox-icon" width="" height="">
+                <use href=""></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a
+              class="condition-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Privacy Policy</a
+            >
+          </label>
           <button type="submit">Send</button>
         </form>
       </div>
