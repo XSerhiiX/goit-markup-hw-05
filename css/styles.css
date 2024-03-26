@@ -766,18 +766,18 @@ input::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-form-condition {
+.modal-privacy {
   display: block;
   margin-bottom: 24px;
 }
 
-.condition {
+.privacy {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.condition-checkbox {
+.privacy-checkbox {
   height: 16px;
   width: 16px;
   margin-right: 8px;
@@ -785,35 +785,35 @@ input::placeholder {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   display: inline-flex;
-  justify-content: center;
+  
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type="checkbox"]:checked + .condition-checkbox {
+input[type="checkbox"]:checked + .privacy .privacy-checkbox {
   background-color: #404bbf;
   border-color: #404bbf;
 }
 
-input[type="checkbox"]:focus-visible + .condition-checkbox {
+input[type="checkbox"]:focus-visible + .privacy .privacy-checkbox {
   box-shadow: 0 0 0 4px rgba(64, 75, 191, 0.25);
 }
 
-.condition-checkbox-icon {
+.privacy-checkbox-icon {
   opacity: 0;
   fill: #fff;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input[type="checkbox"]:checked
-  + .condition-checkbox
-  > .condition-checkbox-icon {
+  + .privacy > .privacy-checkbox
+  > .privacy-checkbox-icon {
   opacity: 1;
 }
 
-.condition-link {
+.privacy-link {
   line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;

@@ -591,7 +591,7 @@
     <!-- #endregion -->
 
     <!-- #region Modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button
           class="modal-close-button"
@@ -657,27 +657,30 @@
             ></textarea>
           </div>
 
-          <label class="modal-form-condition condition">
+          <div class="modal-privacy">
             <input
               class="visually-hidden"
               type="checkbox"
-              name="user-condition"
-              value="false"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
             />
-            <span class="condition-checkbox"
-              ><svg class="condition-checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#mark"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a
-              class="condition-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              >Privacy Policy</a
-            >
-          </label>
+            <label class="modal-form-privacy privacy" for="user-privacy">
+              <span class="privacy-checkbox"
+                ><svg class="privacy-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#mark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="privacy-link"
+                href="https://policies.google.com/privacy?hl=uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
           <button class="modal-button button" type="submit">Send</button>
         </form>
       </div>
@@ -686,3 +689,4 @@
     <!-- #endregion Modal window -->
   </body>
 </html>
+justify-content: center;
